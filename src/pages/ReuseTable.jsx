@@ -23,6 +23,7 @@ const btnStyle = {
 
 const ReuseTable = ({ thead, tbody }) => {
   const [isTheme, setIsTheme] = useState(true);
+  
   return (
     <div
       className={

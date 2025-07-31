@@ -89,7 +89,6 @@ const InvoiceList = () => {
         </Button>
         <ReuseTable thead={tableHeading} tbody={invoiceData} />
       </div>
-
       {showCreateForm && (
         <div className="fixed inset-0 z-50 bg-black/30 flex justify-end">
           <div className="w-full max-w-2xl h-full bg-white p-6 overflow-y-auto shadow-lg">
