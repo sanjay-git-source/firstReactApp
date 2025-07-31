@@ -9,12 +9,17 @@ import {
   TooltipProvider,
 } from "@/components/ui/tooltip";
 import { Eye, EyeOff, Mail } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [userName, setUserName] = useState("");
   const [count, setCount] = useState(0);
   const [login, setLogin] = useState(true);
+  const navigate = useNavigate();
+  const handleLogin = () => {
+      navigate("/invoices");
+  };
 
   const btnStyle = {
     backgroundColor: "#F91942",
@@ -100,7 +105,7 @@ const Login = () => {
           <Button
             className="mb-3"
             style={btnStyle}
-            onClick={() => setCount(count + 1)}
+            onClick={() => handleLogin()}
           >
             {login ? "Login" : "SignUp"}
           </Button>
