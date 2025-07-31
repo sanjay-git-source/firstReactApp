@@ -5,10 +5,7 @@ import InvoiceList from "./pages/InvoiceList";
 const App = () => {
   return (
     <div>
-      {/* <Login/> */}
-      {/* <Home/> */}
-      <InvoiceList />
-      {/*  */}
+      <Login/>
     </div>
   );
 };
