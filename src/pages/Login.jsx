@@ -18,7 +18,7 @@ const Login = () => {
   const [login, setLogin] = useState(true);
   const navigate = useNavigate();
   const handleLogin = () => {
-      navigate("/invoices");
+      navigate("/home");
   };
 
   const btnStyle = {
@@ -111,7 +111,7 @@ const Login = () => {
           </Button>
 
           <div className="text-center">
-            <span className="inline-flex mb-2">
+            <span className="inline-flex mb-2 cursor-pointer">
               {login ? "Don't have an account?" : "Already have an account?"}
               <p
                 className="text-green-500 ml-1"
